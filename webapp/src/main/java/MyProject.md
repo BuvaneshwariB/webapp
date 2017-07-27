@@ -812,7 +812,7 @@ public class mainservlet extends HttpServlet {
         public static void sendEmail(String to,String ddd)
 {
 final String username = "buvaneshwari.b@kggroup.com";
-final String password = "$anthosh10";
+final String password = "bhuvi@123";
 Properties props = new Properties();
 props.put("mail.smtp.auth", "true");
 props.put("mail.smtp.starttls.enable", "false");
@@ -826,7 +826,7 @@ return new PasswordAuthentication(username, password);
 });
 try {
 Message message = new MimeMessage(session);
-message.setFrom(new InternetAddress("santhoshkumar.a@kggroup.com"));
+message.setFrom(new InternetAddress("buvaneshwari.b@kggroup.com"));
 message.setRecipients(Message.RecipientType.TO,
 InternetAddress.parse(to));
 message.setRecipients(Message.RecipientType.CC, InternetAddress.parse(ddd));
